@@ -1,3 +1,4 @@
+diya 팀이 작업한 CartoonGAN을 받아서 시험삼아 돌려보는 중입니다.
 
 ### Below is ORIGINAL README.md
 
