@@ -1,3 +1,42 @@
+diya 팀이 작업한 CartoonGAN을 받아서 시험삼아 돌려보는 중입니다.
+
+일단 anime 이미지가 필요합니다. 이렇게 하면 1초에 한 프레임씩 이미지를 추출해서 저장합니다.
+
+ffmpeg.exe -i d:\download\your-name\Kimi.mkv -vf fps=1 img%05d.jpg
+
+flickr에서 flickr8k 이미지를 다운로드합니다.
+
+https://www.kaggle.com/adityajn105/flickr8k/activity
+이 페이지에 가면,
+![get-flickr-8k](./flickr8k.png)
+요 페이지에서 다운로드 합니다.
+
+이런식으로 저장해 두고
+![folder-structure](./folders.png)
+
+preprocessing.py를 실행합니다.
+preprocessing.py를 pycharm에서 실행하기 위하여 아래와 같이 수정했습니다
+```
+    main('photo', 'D:/uni-trend/kimino/photosrc/images', 'D:/uni-trend/kimino/photodat', 'D:/uni-trend/kimino/animesrc/images', 'D:/uni-trend/kimino/animedat', 'D:/uni-trend/kimino/animedge')
+    main('animation', 'D:/uni-trend/kimino/photosrc/images', 'D:/uni-trend/kimino/photodat', 'D:/uni-trend/kimino/animesrc/images', 'D:/uni-trend/kimino/animedat', 'D:/uni-trend/kimino/animedge')
+```
+
+```
+def main(image_type_to_process, photosrc, photodat, animesrc, animedat, animedge):
+```
+
+```
+    args = parser.parse_args()
+    args.photo_image_source_path = photosrc
+    args.photo_image_save_path = photodat
+    args.animation_image_source_path = animesrc
+    args.animation_image_save_path = animedat
+    args.animation_edge_smoothed_save_path = animedge
+    args.image_type_to_process = image_type_to_process
+```
+
+### Below is ORIGINAL README.md
+
 # [CartoonGAN](http://openaccess.thecvf.com/content_cvpr_2018/papers/Chen_CartoonGAN_Generative_Adversarial_CVPR_2018_paper.pdf)
 
 Contributors (code): [문지환](https://github.com/mnmjh1215), [윤준석](https://github.com/kokookok77)
