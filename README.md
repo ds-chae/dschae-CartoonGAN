@@ -5,6 +5,7 @@ diya 팀이 작업한 CartoonGAN을 받아서 시험삼아 돌려보는 중입�
 ffmpeg.exe -i d:\download\your-name\Kimi.mkv -vf fps=1 img%05d.jpg
 
 flickr에서 flickr8k 이미지를 다운로드합니다.
+
 https://www.kaggle.com/adityajn105/flickr8k/activity
 이 페이지에 가면,
 ![get-flickr-8k](./flickr8k.png)
