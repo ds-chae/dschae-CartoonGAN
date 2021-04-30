@@ -126,14 +126,17 @@ def perform_edge_smoothing(img_path, save_path, kernel_size=5, canny_threshold1=
 
     cv2.imwrite(save_path, smoothed_img)
 
-
-def main():
+def main(image_type_to_process, photosrc, photodat, animesrc, animedat, animedge):
     import argparse
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('image_type_to_process',
-                        choices=['photo', 'animation'],
+#    parser.add_argument('image_type_to_process',
+#                        choices=['photo', 'animation'],
+#                        default=image_type_to_process,
+#                        help='Which preprocessing do you want?')
+    parser.add_argument('--image_type_to_process',
+                        default=image_type_to_process,
                         help='Which preprocessing do you want?')
 
     parser.add_argument('--photo_image_source_path', 
@@ -163,6 +166,12 @@ def main():
 
 
     args = parser.parse_args()
+    args.photo_image_source_path = photosrc
+    args.photo_image_save_path = photodat
+    args.animation_image_source_path = animesrc
+    args.animation_image_save_path = animedat
+    args.animation_edge_smoothed_save_path = animedge
+    args.image_type_to_process = image_type_to_process
 
     if args.image_type_to_process == 'photo':
         if args.photo_image_source_path is None or args.photo_image_save_path is None:
@@ -198,7 +207,8 @@ if __name__ == '__main__':
     Replace [...] with actual path. These path/directories must exist.
     """
 
-    main()
-        
+    main('photo', 'D:/uni-trend/kimino/photosrc/images', 'D:/uni-trend/kimino/photodat', 'D:/uni-trend/kimino/animesrc/images', 'D:/uni-trend/kimino/animedat', 'D:/uni-trend/kimino/animedge')
+    main('animation', 'D:/uni-trend/kimino/photosrc/images', 'D:/uni-trend/kimino/photodat', 'D:/uni-trend/kimino/animesrc/images', 'D:/uni-trend/kimino/animedat', 'D:/uni-trend/kimino/animedge')
+
 
 
