@@ -38,10 +38,10 @@ def main(image_type_to_process, photosrc, photodat, animesrc, animedat, animedge
 실행 결과. 밝은 다리의 이미지는 비슷한데, 계곡 풍경은 매우 어둡습니다.
 원인은 모르겠군요. ㅎㅎㅎ
 
-![0](./images/t0.jpg)![t0](./images/0.jpg)
-![1](./images/t1.jpg)![t1](./images/1.jpg)
-![2](./images/t2.jpg)![t2](./images/2.jpg)
-![3](./images/t3.jpg)![t3](./images/3.jpg)
+![0](./images/t0.jpg)![t0](./images/0.jpg)<br>
+![1](./images/t1.jpg)![t1](./images/1.jpg)<br>
+![2](./images/t2.jpg)![t2](./images/2.jpg)<br>
+![3](./images/t3.jpg)![t3](./images/3.jpg)<br>
 
 여기까지 살펴본 결과로는 CartoonGAN은 조금 부족하지 않은가 싶습니다.
 
