@@ -45,15 +45,17 @@ def main(image_type_to_process, photosrc, photodat, animesrc, animedat, animedge
 
 여기까지 살펴본 결과로는 CartoonGAN은 조금 부족하지 않은가 싶습니다.
 
-그래서 Original CartoonGAN을 돌려보았습니다.
-결과는 아래와 같습니다.
+그래서 Original CartoonGAN을 돌려보았습니다.<br>
+결과는 아래와 같습니다.<br>
 ![o0](./images/o0.jpg)<br>
 ![o0](./images/o1.jpg)<br>
 ![o0](./images/o2.jpg)<br>
 ![o0](./images/o3.jpg)<br>
-이 결과가 더 좋습니다. 원인은 모르겠습니다.
+이 결과가 더 좋습니다. 원인은 모르겠습니다.<br>
 
-### Below is ORIGINAL README.md
+<a href="https://drive.google.com/file/d/18k1dxBnQk_A3g2xrub6Ln6Om0JjyTS8N/view?usp=sharing">Original CartoonGAN checkpoint download</a>
+
+### Below is DIYA team's ORIGINAL README.md
 
 # [CartoonGAN](http://openaccess.thecvf.com/content_cvpr_2018/papers/Chen_CartoonGAN_Generative_Adversarial_CVPR_2018_paper.pdf)
 
